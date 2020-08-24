@@ -10,7 +10,7 @@
 
     <style>
       .home #main {
-        height:{{ site.data.settings.bannerheight }}vmin;
+        height:{{ site.data.settings.bannerheight }}vmax;
       }
     </style>
 
@@ -38,7 +38,7 @@
     {%- endif -%}
     {% include metadata.html %}
     <!-- style the featured page image -->
-    {%- if page.header_feature_image -%}
+    {%- if page.header_feature_image > "" -%}
     {%- assign image_url = page.header_feature_image -%}
     <style>
       #main {

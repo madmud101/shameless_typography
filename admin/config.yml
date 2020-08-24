@@ -37,6 +37,7 @@ collections:
       - {label: "Caption", name: "caption", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", required: false, hint: "If you setup your Disqus account then turn this on"}
       - {label: "Body", name: "body", widget: "markdown", hint: "You can type straight into this field and use the toolbar to select styles. You can also use markdown directly when you switch this off. In markdown mode, you can also add HTML."}
+      - {label: "Tags", name: "tags", widget: "select", multiple: true, max: 5, options: ["Architecture", "Art", "Books", "Buildings", "Cinema", "Culture", "Design", "Education", "Fonts", "Graphics", "History", "Journalism", "Landscape", "Life", "Literature", "Media", "Music", "Nature", "Packaging", "Personal", "Photography", "Publishing", "Retail", "Science", "Signage", "Transport", "Travel", "TV", "Work"], required: false, hint: "By adding tags the posts can be listed together under that tag. You will need to enable the tags page (by turning on show on menu for the tags page."}
 
 
   - name: "pages"
@@ -148,6 +149,12 @@ collections:
             widget: "boolean"
             required: false
             hint: "You can choose to show the posts on the home page in a grid rather than just lined up vertically."
+
+          - label: "Fix the navigation bar to the top of the page?"
+            name: "fixednavbar"
+            widget: "boolean"
+            required: false
+            hint: "If you turn this on, the navbar at the top of all pages will be fixed and the content will flow underneath as it scrolls."
 
           - label: "Image Enlargement"
             name: "upzoom"
