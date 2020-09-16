@@ -7,3 +7,4 @@ logo: ../uploads/face.jpg
 favicon: /uploads/favicon.ico
 gridlayout: false
 upzoom: true
+fixednavbar: false

@@ -3,9 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     {%- include javascripts.html -%}
-    {%- include stylesheets.html -%}
     {%- include typography.html -%}
+    {%- include stylesheets.html -%}
 
+<!-- add banner height from the config settings -->
+
+    <style>
+      .home #main {
+        height:{{ site.data.settings.bannerheight }}vmax;
+      }
+    </style>
 
     <link rel="shortcut icon" href="{{ site.data.settings.favicon | relative_url }}" type="image/x-icon">
     <link rel="icon" href="{{ site.data.settings.favicon | relative_url }}" type="image/x-icon">
@@ -31,7 +38,7 @@
     {%- endif -%}
     {% include metadata.html %}
     <!-- style the featured page image -->
-    {%- if page.header_feature_image -%}
+    {%- if page.header_feature_image > "" -%}
     {%- assign image_url = page.header_feature_image -%}
     <style>
       #main {
