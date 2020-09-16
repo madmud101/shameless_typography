@@ -1,13 +1,10 @@
-title: Shameless Typography
-description: Rating rip-off type
+title: Example blog
+description: ""
 header_text: ""
 footer_text: Copyright 2020 Adam Blades
-header_feature_image: ../uploads/pages.jpg
-logo: /uploads/face.jpg
+header_feature_image: /uploads/pages.jpg
+logo: ../uploads/face.jpg
 favicon: /uploads/favicon.ico
-bannerheight: "20"
 gridlayout: false
-logo: /uploads/face.jpg
-favicon: /uploads/favicon.ico
 upzoom: true
 fixednavbar: false
