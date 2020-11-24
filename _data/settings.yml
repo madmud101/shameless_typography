@@ -11,4 +11,4 @@ fixednavbar: false
 upzoom: true
 items:
   - name: About me
-    siteurl: www.google.com
+    siteurl: http://www.google.com
